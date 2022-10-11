@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="box">
+      <!-- Etiqueta "div" de apertura, no es otra cosa que una caja con clase asignada "box", que contendra lo siguiente.  -->
+      <p id="rotulo1"></p>
+      <!--Etiqueta Titulo-->
+      <select id="operacion" name="operacion">
+        <!--Etiqueta select (apertura): funciona como un input, pero es un selector de opciones, no debemos escribir nada, si no seleccionar una opcion-->
+        <option value="suma">suma</option>
+        <!--Etiqueta option: Es una opcion de seleccion, en este caso "suma". Su "id" es un "value".-->
+        <option value="resta">resta</option>
+        <!--Otra opcion de seleccion, en este caso "resta".-->
+        <option value="division">division</option>
+        <!--Otra opcion de seleccion, en este caso "division".-->
+        <option value="multiplicacion">multiplicacion</option>
+        <!--Otra opcion de seleccion, en este caso "multiplicacion".-->
+      </select>
+      <!--Cierre de etiqueta select.-->
+    </div>
+    <!--Cierre de etiqueta de clase "box".-->
+
+    <div class="box">
+      <!--Div o caja contenedora, tambien de clase "box".-->
+      <p id="rotulo2"></p>
+      <!--Etiqueta de Rotulo/Titulo-->
+      <input type="number" id="dato1" />
+      <!--Primer input de ingreso de dato, de tipo number.-->
+    </div>
+    <!--Cierre de etiqueta div de clase "box".-->
+
+    <div class="box">
+      <!--Div o caja contenedora, tambien de clase "box".-->
+      <p id="rotulo3"></p>
+      <!--Etiqueta de Rotulo/Titulo-->
+      <input type="number" id="dato2" />
+      <!--Segundo input de ingreso de dato, de tipo number.-->
+    </div>
+
+    <p class="box">
+      <!--Etiqueta de tipo parrafo, con clase "box".-->
+      Como usar:
+      <!--String sin etiqueta.-->
+      <li>Ingrese dos numeros con los que desea operar.</li>
+      <!--List Items (listado de items): Genera un listado por puntos.-->
+      <li>Elija el tipo de operación</li>
+      <!--Otro Item en listado por puntos.-->
+    </p>
+    <!--Cierre de etiqueta "p" de clase "box".-->
+
+    <p id="resultado"></p>
+    <!--Etiqueta Parrafo de id "resultado"-->
+
+    <button id="btnEnv">Calcular</button>
+    <!--Boton de envio de datos con su id.-->
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
